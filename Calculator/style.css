@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+
+.container {
+	width: 80%;
+	max-width: 350px;
+	border-radius: 20px;
+	overflow: hidden;
+	border: 1px solid #000;
+}
+
+.display {
+	background-color: rgba(39, 50, 70, 1);
+	height: 100px;
+	width: 100%;
+	text-align: right;
+	padding: 20px;
+	font-size: 30px;
+	position: relative;
+	color: #fff;
+	border: 1px solid #000;
+}
+
+.display-1 {
+	opacity: 0.5;
+	font-size: 20px;
+	height: 45%;
+}
+
+.display-1, 
+.display-2 {
+	display: flex;
+  	justify-content: flex-end;
+  	white-space: nowrap;
+  	overflow: hidden;
+}
+
+.all_button {
+	display:  grid;
+	grid-template:  repeat(4, 1fr)/ repeat(4, 1fr);
+}
+
+.button {
+	border: 0.5px solid rgba(92, 92, 92, 0.2);
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content:  center;
+	align-items: center;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: rgba(39, 50, 70, 0.3);
+}
+
+.btn-0 {
+	grid-column: 1/3;
+}
+
+.diffColor {
+	background-color: #eb8e42;
+}
+
+.diffColor:hover {
+	background-color: #e86b05;
+}
